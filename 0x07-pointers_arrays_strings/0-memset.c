@@ -1,23 +1,19 @@
-#include"main.h"
+#include "main.h"
+
 /**
-  *A function that fills all positions of an array      *with a constant value b
-  *
-  *@b is the constant byte to fill in the memory
-  *location
-  *
-  *@s is the pointer to the target string
-  *
-  *@n is the number of memories that have to be
-  *occupied
-  */
-
+ * _memset - fills memory with a constant byte
+ * @s: pointer to the memory area to fill
+ * @b: the constant byte to fill
+ * @n: the number of bytes to fill
+ *
+ * Return: a pointer to the filled memory area @s
+ */
 char *_memset(char *s, char b, unsigned int n)
-
 {
-  for (int i=0;i<n;i++)
+    for (unsigned int i = 0; i < n; i++)
     {
-      s[i]=b;
+        s[i] = b;
     }
-  s[n] = "\0";
-  return (s);
+
+    return (s);
 }
