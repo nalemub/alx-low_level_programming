@@ -27,11 +27,10 @@ else if (factor == 1)
  * @n: The number to check
  *
  * Return: 1 if the number is prime, 0 otherwise
- *@m:The factor to check if it divides n without remainder
  */
 int is_prime_number(int n)
 {
-int m=n-1
+int m=n-1;
 int answer = the_true_function(n, m);
 return (answer);
 }
