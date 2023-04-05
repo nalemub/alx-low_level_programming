@@ -1,21 +1,3 @@
-/**
- * mysqr_root_function - Returns the square root of a number
- * @number: The number to find the square root of
- *
- * Return: The square root of the number
- */
-int mysqr_root_function(int number)
-{
-int i = 0;
-int placeholder = 0;
-
-while (placeholder <= number)
-{
-  i++;
-  placeholder = i * i;
-}
-  return (i - 1);
-}
 
 /**
  * the_true_function - Helper function to check if a number is prime
@@ -45,10 +27,12 @@ else if (factor == 1)
  * @n: The number to check
  *
  * Return: 1 if the number is prime, 0 otherwise
+ *@m:The factor to check if it divides n without remainder
  */
 int is_prime_number(int n)
 {
-int answer = the_true_function(n, mysqr_root_function(n));
+int m=n-1
+int answer = the_true_function(n, m);
 return (answer);
 }
 
