@@ -1,3 +1,4 @@
+#include"_putchar.c"
 /**
  * _puts_recursion - prints a string in a virtual loop
  * @s: string
