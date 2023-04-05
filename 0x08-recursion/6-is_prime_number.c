@@ -8,7 +8,7 @@
  */
 int the_true_function(int n, int factor)
 {
-	if ((n % factor == 0 && factor > 1) || (n<0))
+	if (n % factor == 0 && factor > 1)
 	{
 		return (0);
 	}
@@ -39,7 +39,7 @@ int is_prime_number(int n)
 	}
 	else if (n < 0)
 	{
-		n = n * -1;
+		return (0);
 	}
 
 	m = n - 1;
