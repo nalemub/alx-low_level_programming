@@ -4,13 +4,17 @@
  *
  * Return: void
  */
-_puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
+	void return;
 	if (*s == '\0')
-		return;
+	{
+		return (0);
+	}
 
 	_putchar(*s);
 	s++;
-	_puts_recursion(s);
+	result = _puts_recursion(s);
+	return (result);
 }
 
