@@ -8,7 +8,7 @@
  */
 int the_true_function(int n, int factor)
 {
-	if (n % factor == 0 && factor > 1)
+	if ((n % factor == 0 && factor > 1) || (n<0))
 	{
 		return (0);
 	}
