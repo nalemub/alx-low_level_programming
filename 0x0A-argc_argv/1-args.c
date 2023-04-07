@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 {
     int i = argc-1;
     printf("%i\n", argc);
-    sizeof(argv[i]);
-
-    return (0);
+    i = atoi(argv[0]);
+    return (i);
 }
