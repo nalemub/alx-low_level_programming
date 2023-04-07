@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     int i;
     int result = 0;
 
-    for (i = 1; i <= argc; i++)
+    for (i = 1; i < argc; i++)
     {
         if (sizeof(argv[i]) != sizeof(int))
         {

@@ -6,6 +6,7 @@
  *
  *  @argc: the arguement count in int form
  *
+ *  @i: placeholder integer
  *  @argv: the arguement vector or array
  *
  *  Return int
@@ -17,5 +18,4 @@ int main(int argc, char *argv[])
     printf("%s\n", argv[0]);
     i++;
     return (0);
-    
 }

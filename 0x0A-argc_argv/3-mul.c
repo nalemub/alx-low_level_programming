@@ -6,10 +6,14 @@
  * main - multiplies two numbers
  * @argc: the argument count in int form
  * @argv: the argument vector or array
+ * @temp: placeholder
+ * @result: placeholder2
+ * @temp2: placeholder3
+ * 
  *
  * Return: Always 0.
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
     int temp;
     int temp2;
