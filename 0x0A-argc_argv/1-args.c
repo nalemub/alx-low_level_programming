@@ -10,8 +10,9 @@
 
 #include <stdio.h>
 
-int main(int argc)
+int main(int argc, char *argv[])
 {
     printf("%i\n", argc);
     return (0);
+    argv[0] = "Die";
 }
