@@ -1,3 +1,4 @@
+$include "main.c"
 /**
  * _strcmp - compares two strings
  * @s1: first string
