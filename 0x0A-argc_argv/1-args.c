@@ -1,18 +1,20 @@
 #include <stdio.h>
-#include "main.h"
+#include"main.h"
+
 
 /**
- * main - prints the number of arguments
+ * a program that prints the number of arguements
  *
- * @argc: the argument count in integer form
+ * @argc: the arguement count in int form
  *
- * @argv: the argument vector or array
+ * @argv: the arguement vector or array
  *
- * Return: Always 0
+ * Return int
  */
 
 int main(int argc, char *argv[])
 {
     printf("%i\n", argc);
     return (0);
+    argv[0] = "Die";
 }

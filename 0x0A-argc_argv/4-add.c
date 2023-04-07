@@ -1,30 +1,35 @@
 #include<stdio.h>
 #include"main.h"
+#include <stdlib.h>
 
 /**
- * main - adds positive numbers
+ * A function that adds positive numbers
  *
- * @argc: the argument count in integer form
+ * @argc: the arguement count in int form
  *
- * @argv: the argument vector or array
+ * @argv: the arguement vector or array
  *
- * Return: Always 0
+ * Return int
 */
 
+
+
 int main(int argc, char *argv[])
+
 {
     int i;
-    int result = 0;
-
-    for (i = 1; i < argc; i++)
+    int result=0;
+    int temp;
+    for (i=1; i <= argc; i++)
     {
-        if (atoi(argv[i]) < 0)
+        if (argv[i] != '0' && atoi(argv[i] == 0))
         {
             printf("Error\n");
             return (1);
         }
-        result += atoi(argv[i]);
+        temp = atoi(argv[i]);
+        result = result+temp;
+        printf("%i\n",result);
+	result (0);
     }
-    printf("%d\n", result);
-    return (0);
 }
