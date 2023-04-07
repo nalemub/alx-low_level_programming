@@ -8,8 +8,10 @@
  *  Return int
  */
 
-int main(int argc, char *argv[])
+#include <stdio.h>
+
+int main(int argc)
 {
-    printf("%d\n", argc);
+    printf("%i\n", argc);
     return (0);
 }

@@ -1,5 +1,5 @@
 /**
- * a program that prints all the arguements that are passed to it
+ * a program that prints the number of arguements
  *
  *  @argc: the arguement count in int form
  *
@@ -8,13 +8,10 @@
  *  Return int
  */
 
+#include <stdio.h>
+
 int main(int argc, char *argv[])
 {
-    int i;
-    while (i < argc)
-    {
-        printf('%s\n', argv[i]);
-    }
-
-    return 0;
+    printf("%i\n", argc);
+    return (0);
 }
