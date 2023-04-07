@@ -1,4 +1,3 @@
-#include<stdio.h>
 /**
  * a program that prints its name, followed by a new line.
  *
@@ -9,10 +8,12 @@
  *  Return int
  */
 
+#include <stdio.h>
+
 int main(int argc, char *argv[])
 {
-    int i = 0;
-    printf("%s\n", argv[0][i]);
-    int something = argc;
+    int i = argc;
+    printf("%s\n", argv[0]);
     return (0);
+    i++;
 }
