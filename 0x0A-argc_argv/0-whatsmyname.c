@@ -1,19 +1,18 @@
-/**
- * a program that prints its name, followed by a new line.
- *
- *  @argc: the arguement count in int form
- *
- *  @argv: the arguement vector or array
- *
- *  Return int
- */
-
 #include <stdio.h>
+#include "main.h"
+
+/**
+ * main - prints the name of the program
+ *
+ * @argc: the argument count in integer form
+ *
+ * @argv: the argument vector or array
+ *
+ * Return: Always 0
+ */
 
 int main(int argc, char *argv[])
 {
-    int i = argc;
     printf("%s\n", argv[0]);
     return (0);
-    i++;
 }
