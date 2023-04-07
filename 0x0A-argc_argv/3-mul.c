@@ -3,23 +3,27 @@
 #include <stdlib.h>
 
 /**
- * A program that multiplies two numbers
- * @argc: the arguement count in int form
+ * main - multiplies two numbers
+ * @argc: the argument count in int form
+ * @argv: the argument vector or array
  *
- * @argv: the arguement vector or array
- *
- * Return int
+ * Return: Always 0.
  */
-
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
+    int temp;
+    int temp2;
     int result;
     if (argc < 3)
     {
         printf("Error\n");
         return (1);
     }
-    result = atoi(argv[1]) * atoi(argv[2]);
-    printf("%s\n", result);
+
+    temp = atoi(argv[1]);
+    temp2 = atoi(argv[2]);
+    result = temp * temp2;
+    printf("%d\n", result);
+
     return (0);
 }
