@@ -1,5 +1,5 @@
 #include <stdlib.h> 
-
+#include "main.h"
 /**
  * a function that allocates a dynamic memory
  * 

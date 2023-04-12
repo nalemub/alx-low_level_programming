@@ -1,5 +1,5 @@
 #include <stdlib.h> 
-
+#include "main.h"
 /**
  * a function that takes min and max, and lists all numbers between
  * 
