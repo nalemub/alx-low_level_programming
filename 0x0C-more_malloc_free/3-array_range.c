@@ -13,18 +13,16 @@
 int *array_range(int min, int max)
 {
 int i;
-void* newmem;
 int *rangenum;
 if (min > max)
 {
 return NULL;
 }
-newmem = malloc((max-min)+1);
-rangenum = newmem;
+rangenum = (int*) malloc((max-min)+1);
 for (i = 0; i < (max-min); i++)
 {
 rangenum[i] = (min+i);
 }
 
-return (newmem);
+return (rangenum);
 }
