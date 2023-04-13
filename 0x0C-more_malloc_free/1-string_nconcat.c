@@ -47,7 +47,7 @@ j++;
 }
 for (i = 0; i < string_length(s2); i++)
 {
-if (i<n)
+if (i == n)
 {
 result[j] = '\0';
 return (result);   
