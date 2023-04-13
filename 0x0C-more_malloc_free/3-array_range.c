@@ -13,12 +13,14 @@
 int *array_range(int min, int max)
 {
 int i;
+void* newmem;
+int *rangenum;
 if (min > max)
 {
 return NULL;
 }
-void* newmem = malloc((max-min)+1);
-int *rangenum = newmem;
+newmem = malloc((max-min)+1);
+rangenum = newmem;
 for (i = 0; i < (max-min); i++)
 {
 rangenum[i] = (min+i);

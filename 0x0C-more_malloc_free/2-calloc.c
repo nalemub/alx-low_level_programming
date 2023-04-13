@@ -12,16 +12,19 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+void *newmem;
+unsigned int i;
+char* p;
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-void* newmem = malloc(nmemb * size);
+newmem = malloc(nmemb * size);
 if (newmem == NULL) {
 return (NULL);
 }
-char* p = newmem;
-for (unsigned int i = 0; i < nmemb * size; ++i) {
+p = newmem;
+for (i = 0; i < nmemb * size; ++i) {
 *(p + i) = 0;
 }
 
