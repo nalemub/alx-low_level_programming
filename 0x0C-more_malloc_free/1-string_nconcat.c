@@ -52,7 +52,7 @@ if (i == n)
 result[j] = '\0';
 return (result);   
 }
-result[j] = s1[i];
+result[j] = s2[i];
 j++;
 }
 result[j] = '\0';
