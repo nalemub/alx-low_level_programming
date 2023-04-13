@@ -27,16 +27,16 @@ return (length);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int i;
-int j;
+int j = 0;
 int buffer;
 char* result;
 if (s1 == NULL)
 {
 s1 = "";
 }
-if (s1 == NULL)
+if (s2 == NULL)
 {
-s1 = "";
+s2 = "";
 }
 buffer = string_length(s1)+string_length(s2)+1;
 result = (char*) malloc(buffer);
@@ -45,13 +45,8 @@ for (i = 0; i < string_length(s1); i++)
 result[j] = s1[i];
 j++;
 }
-for (i = 0; i < string_length(s2); i++)
+for (i = 0; i < string_length(s2) && i < n; i++)
 {
-if (i == n)
-{
-result[j] = '\0';
-return (result);   
-}
 result[j] = s2[i];
 j++;
 }
