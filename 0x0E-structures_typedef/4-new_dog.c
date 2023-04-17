@@ -14,9 +14,9 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *tempdog;
-(*tempdog).owner = owner;
-(*tempdog).age = age;
-(*tempdog).name = name;
+tempdog -> owner = owner;
+tempdog -> age = age;
+tempdog -> name = name;
 
 return (tempdog);
 }
