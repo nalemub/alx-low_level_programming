@@ -7,14 +7,16 @@
  *  dog - is a structure defining the name, age gender and owner of a dog
  * @struct: defines a structure
 */
-typedef struct
+struct dog
 {
 char *name;
 float age;
 char *owner;
-} dog;
+};
 
-void init_dog(dog *d, char *name, float age, char *owner);
-void print_dog(dog *d);
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif /* DOG_H */
