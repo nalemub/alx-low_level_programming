@@ -9,7 +9,5 @@ printf("nil");
 }
 printf("Name: %s", (*d).name);
 printf("Age: %f", (*d).age);
-printf("Owner: %f", (*d).owner);
-
-return (0);
+printf("Owner: %s", (*d).owner);
 }
