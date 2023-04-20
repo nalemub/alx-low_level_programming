@@ -6,6 +6,7 @@
 int main(int argc, char *argv[])
 {
     int result;
+    char *pointertoop;
     int (*func)(int, int);
     if (argc < 3)
     {
@@ -17,7 +18,8 @@ int main(int argc, char *argv[])
         printf("Error");
         exit(100);
     }
-    func =  get_op_func("argv[2]");
+    pointertoop = &argv[2][0];
+    func =  get_op_func(pointertoop);
     result = func(atoi(argv[1]),atoi(argv[3]));
     if (func == NULL)
     {
