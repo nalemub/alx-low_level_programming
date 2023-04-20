@@ -10,12 +10,12 @@ int main(int argc, char *argv[])
     int (*func)(int, int);
     if (argc < 3)
     {
-        printf("Error");
+        printf("Error\n");
         exit(98);
     }
     if ((argv[2][0] == '/' && argv[3][0] == '0') || (argv[2][0] == '%' && argv[3][0] == '0'))
     {
-        printf("Error");
+        printf("Error\n");
         exit(100);
     }
     pointertoop = &argv[2][0];
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     result = func(atoi(argv[1]),atoi(argv[3]));
     if (func == NULL)
     {
-        printf("Error");
+        printf("Error\n");
         exit(99);
     }
     printf("%i",result);
