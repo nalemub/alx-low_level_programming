@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     pointertoop = &argv[2][0];
     func =  get_op_func(pointertoop);
     result = func(atoi(argv[1]),atoi(argv[3]));
-    if (func == NULL)
+    if (argv[2][1] != NULL)
     {
         printf("Error\n");
         exit(99);
